@@ -41,7 +41,7 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
 
-streamlit.text(What fruit do you want to add?)
+streamlit.text("What fruit do you want to add?")
 
 add_fruit_choice = streamlit.text_input('What fruit would you like to add', '')
 streamlit.write('The user entered', add_fruit_choice)
